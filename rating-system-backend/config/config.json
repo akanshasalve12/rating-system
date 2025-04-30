@@ -1,0 +1,25 @@
+{
+  
+    "development": {
+      "username": "root",
+      "password": "Y1012Jqkhkp",
+      "database": "rating_system_dev",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+  
+  "test": {
+    "username": "your_postgres_username",
+    "password": "your_postgres_password",
+    "database": "rating_system_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "your_postgres_username",
+    "password": "your_postgres_password",
+    "database": "rating_system_prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
