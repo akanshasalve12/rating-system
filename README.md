@@ -8,7 +8,7 @@ This is a full-stack web application developed as part of the FullStack Intern C
 
 Frontend:** React.js, TypeScript, Tailwind CSS, Axios, React Router
 - **Backend:** Node.js, Express.js
-- **Database:** PostgreSQL
+- **Database:** MySQL
 - **Authentication:** JWT (JSON Web Token)
 
  Features
@@ -24,13 +24,8 @@ Frontend:** React.js, TypeScript, Tailwind CSS, Axios, React Router
 
 ## Folder Structure
 
-rating-system/
-├── rating-system-backend/
-│ └── ...
-├── rating-system-frontend/
-│ └── ...
-├── schema.sql
-└── README.md
+![Screenshot 2025-05-05 100002](https://github.com/user-attachments/assets/76d5c6bc-e5e9-4867-a65f-e04786b5d0a4)
+
 
 yaml
 Copy
@@ -63,8 +58,8 @@ ini
 Copy
 Edit
 PORT=5000
-DATABASE_URL=postgresql://<username>:<password>@localhost:5432/<database_name>
-JWT_SECRET=your_jwt_secret
+DATABASE_URL=postgresql://root:Y1012Jqkhkp@localhost:5432/rating_system_dev
+JWT_SECRET=dc0c63e0e9640cefe72a657787677d83e551227bbd409125300d58a2f3d21d1ed37825434c2a5d66774f5d4f741802cd2ce5b60db5582b66a0e3d6d87a4a44e1
 Start the backend server:
 
 bash
