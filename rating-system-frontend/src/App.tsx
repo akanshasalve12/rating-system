@@ -1,3 +1,5 @@
+"use rating-system-backend"
+import '../src/styles/globals.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
@@ -9,7 +11,7 @@ import StoresPage from './pages/StoresPage';
 import AddStorePage from './pages/AddStorePage';
 import AddUserPage from './pages/AddUserPage';
 import UpdatePasswordPage from './pages/UpdatePasswordPage';
-import NotFoundPage from './pages/NotFoundPage';
+
 
 export default function App() {
   return (
@@ -24,7 +26,6 @@ export default function App() {
         <Route path="/add-store" element={<AddStorePage />} />
         <Route path="/add-user" element={<AddUserPage />} />
         <Route path="/update-password" element={<UpdatePasswordPage />} />
-        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );

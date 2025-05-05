@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ const LoginPage: React.FC = () => {
     return true;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!validateForm()) return;
 

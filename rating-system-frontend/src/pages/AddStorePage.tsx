@@ -1,13 +1,11 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function AddStorePage() {
-  const [storeName, setStoreName] = useState('');
+  const [storeName, setStoreName] = useState<string>(''); // add type for state
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => { // type for event
     e.preventDefault();
     console.log('Store Added:', storeName);
-    // Here you can handle adding the store logic
   };
 
   return (

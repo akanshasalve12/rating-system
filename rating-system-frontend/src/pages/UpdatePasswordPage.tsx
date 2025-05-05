@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function UpdatePasswordPage() {
   const [newPassword, setNewPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Password Updated:', newPassword);
     

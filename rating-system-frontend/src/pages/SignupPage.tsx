@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -15,7 +16,7 @@ export default function SignupPage() {
   const [loading, setLoading] = useState(false);
 
   // Handle form submission
-  const handleSubmit = async (e) => { 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => { 
     e.preventDefault();
     setLoading(true);
 
@@ -111,6 +112,12 @@ export default function SignupPage() {
           </button>
         </div>
       </form>
+      <p className='text-sm text-gray-500 mt-4 text-center'>
+        Already have an account? {''}
+        <a href="/login" className="text-purple-500 hover:underline" >
+        Login
+        </a>
+      </p>
     </div>
   );
 }
